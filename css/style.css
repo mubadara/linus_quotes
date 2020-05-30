@@ -1,0 +1,32 @@
+body {
+    background-color: blue;
+}
+.container {
+    background-color: white;
+    margin: 250px auto auto auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 1%;
+}
+button {
+    
+    position: relative;
+    top: 275px;
+    left: 550px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3%;
+    background-color: blue;
+    color: white;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    display: flex;
+    position: relative;
+    top: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
