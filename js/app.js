@@ -11,12 +11,8 @@ let quotesArr = [
     "When you say 'I wrote a program that crashed Windows,' people just stare at you blankly and say 'Hey, I got those with the system, for free.'",
     "Software is like sex: It's better when it's free.",
 ];
-///Look over list elements
-let quote = document.querySelector('p');
-
-console.log(quote.innerHTML);
 ///Change button & body color
-function changeColor() {
+function changeEverything() {
     ///Initialize random color
     let color1 = Math.round((Math.random() * 256)+1);
     let color2 = Math.round((Math.random() * 256)+1);
@@ -29,7 +25,13 @@ function changeColor() {
     ///change color
     body.style.backgroundColor = color;
     button.style.backgroundColor = color;
+    //Select quote
+    let quote = document.querySelector('p');
+    //Change quote
+    quote.textContent = quotesArr[Math.floor((Math.random()*quotesArr.length))];
+    //change quote color
+    quote.style.color = color;
 };
 ///Apply a click event listener for the button (& it works ffs)
 let theButton = document.querySelector("button");
-theButton.addEventListener("click",changeColor);
+theButton.addEventListener("click",changeEverything);

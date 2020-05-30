@@ -9,10 +9,10 @@ body {
     border-radius: 1%;
 }
 button {
-    
-    position: relative;
-    top: 275px;
-    left: 550px;
+    text-decoration: none;
+    position: fixed;
+    margin-left: 550px; 
+    margin-top: 275px;
     width: 100px;
     height: 40px;
     border-radius: 3%;
